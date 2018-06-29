@@ -239,7 +239,7 @@ body
 	position: absolute;
 	z-index: 2;
 }
-.login button{
+.login .login1 {
 	
 	z-index: 2;
 	border:1px solid #de00a5;
@@ -247,15 +247,30 @@ body
 	color: #fff;
 	font-family: 'Europa';
 }
-/**fiiiiiiiiiiiiiiiin*/
-.description button{
+.description .register{
 	
-	z-index: 2
+	z-index: 2;
 	border:1px solid #de00a5;
 	background:  #de00a5;
 	color: #fff;
 	font-family: 'Europa';
 }
+.register-blade { 
+	z-index: 2;
+	border:1px solid #de00a5;
+	background:  #de00a5;
+	color: #fff;
+	font-family: 'Europa';
+}
+.login-blade{ 
+	z-index: 2;
+	border:1px solid #de00a5;
+	background:  #de00a5;
+	color: #fff;
+	font-family: 'Europa';
+}
+/**fiiiiiiiiiiiiiiiin*/
+
 
 .features{
 	padding: 50px;
@@ -616,4 +631,27 @@ height: 15px;
 background-color: #686f7a;
 }
 
+/*instructor photo
 
+.side-crop { max-height: 500px; overflow: hidden; }
+.side-crop img { max-height: initial; /* Maybe optional. See note below }*/
+
+
+.cont
+{
+	 position: relative;
+    color: white;
+    max-height: 400px; 
+    overflow: hidden;
+}
+
+#h
+{
+	position: absolute;
+	
+}
+
+#h p
+{
+	font-size: 20px;
+}

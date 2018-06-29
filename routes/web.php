@@ -43,20 +43,34 @@ Route::get('/', function () {
 Route::get('les_cours', function () {
     return view('les_cours');
 });
-Route::get('instructor', function () {
-    return view('instructor');
+
+Route::get('cour_content', function () {
+    return view('cour_content');
+})->middleware('auth');
+
+Route::get('instructor1', function () {
+    return view('instructor1');
+});
+Route::get('instructor2', function () {
+    return view('instructor2');
+});
+Route::get('instructor3', function () {
+    return view('instructor3');
 });
 
 Route::get('register', function () {
     return view('register');
 });
+
 Route::get('sign-in', function () {
     return view('sign-in');
 });
+
 Route::get('sign-out', function () {
     return view('sign-out');
 });
-Route::post('instructor', function () {
+
+Route::post('instructor1', function () {
     $user=new app\User;
     $user->name = input::get('name');
     $user->email = input::get('email');

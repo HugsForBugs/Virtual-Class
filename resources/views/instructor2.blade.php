@@ -7,9 +7,9 @@
   <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
   <link rel="stylesheet" href="{{asset('css/style.css')}}">
   <link rel="stylesheet" href="{{asset('css/animate.css')}}">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{asset('https://use.fontawesome.com/releases/v5.0.12/css/all.css')}}" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
 
-  <title>Computer Science</title>
+  <title>instuctor form</title>
 </head>
 <body >
 
@@ -56,27 +56,107 @@
 </nav>
 
 
-<div class="section1">
-  <div class="container">
-     <div class="row justify-content-center">
-    <div class="col-lg-6 col-sm video">
-       <a href="content.html" target="_blank" ><img src="images/e.jpg" class="img img-fluid "></a>
-    </div>
-    <div class="title justify-content-center col-lg-6 col-sm">
-     <div class="row "> <h3>NodeJs From scratch</h3></div>
-     <div class="row "><button class=" btn btn-outline-secondary btn-lg">continuer vers lecture 1</button></div>
-     <div class="bottom">
-     <div class="row"><h6> </h6></div>
-    <div class="row"><div class="progress">
-  <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div></div>
-</div>
-</div></div>
-    </div>
+
+<!--<div class="side-crop row">
+  <img src="images/teach.jpg" class="img-fluid" alt="Responsive image">
+  <div class="col-2">
+      <button class=" btn btn-outline-secondary btn-lg">Register</button>
+      </div>
+</div>-->
+<form action="">
+   <div class="why">
+    <div class="container text-center">
+    <div class="row justify-content-center">
+      <h2>Please Fill This Form Bellow</h2>
+    </div> 
+    <div class="row justify-content-center">
+      <div class="col-sm col-lg-4 ">
+   </div>
+
+       <div class="col-sm col-lg-4 ">
+        <h4>what is your motivation to teach </h4>
+        <input class="form-control" type="text" placeholder="my motivation is">
+      </div>
+       <div class="col-sm col-lg-4 ">
+      </div>
+    </div> 
   </div>
-    
+    </div>
+    <hr>
+
+   <div class="why">
+    <div class="container text-center">
+    <div class="row justify-content-center">
+    </div> 
+    <div class="row justify-content-center">
+      <div class="col-sm col-lg-4 ">
+   </div>
+
+       <div class="col-sm col-lg-4 ">
+        <h4>choose the catégorie of your course </h4>
+        <select id="inputState" class="form-control">
+        <option selected>Computer Sience</option>
+        <option>medecine</option>
+        <option>art and culture</option>
+        <option>health and psychologie</option>
+        <option>business and management</option>
+      </select>
+      </div>
+       <div class="col-sm col-lg-4 ">
+      </div>
+    </div> 
   </div>
-  
+    </div>
+    <hr>
+
+   <div class="why">
+    <div class="container text-center">
+    <div class="row justify-content-center">
+    </div> 
+    <div class="row justify-content-center">
+      <div class="col-sm col-lg-4 ">
+   </div>
+
+       <div class="col-sm col-lg-4 ">
+        <h4>upload your resume </h4>
+          <div class="input-group mb-3">
+  <div class="custom-file">
+    <input type="file" class="custom-file-input" id="inputGroupFile02">
+    <label class="custom-file-label" for="inputGroupFile02">Choose file</label>
+  </div>
+  <div class="input-group-append">
+    <span class="input-group-text" id="">Upload</span>
+  </div>
 </div>
+      </div>
+       <div class="col-sm col-lg-4 ">
+      </div>
+    </div> 
+  </div>
+    </div>
+    <hr>
+
+    <div class="why">
+    <div class="container text-center">
+    <div class="row justify-content-center">
+    </div> 
+    <div class="row justify-content-center">
+      <div class="col-sm col-lg-4 ">
+   </div>
+
+       <div class="col-sm col-lg-4 ">
+        <a href="{{ URL::to('/instructor3 ') }}" class="btn btn-primary">Submitt</a>
+      </div>
+       <div class="col-sm col-lg-4 ">
+      </div>
+    </div> 
+  </div>
+    </div>
+</form>
+s
+
+<!--footer-->
+
   <section id="footer" style="margin-top: 100px;">
     <div class="container text-center">
       <div class="row text-xs-center text-sm-left text-md-left justify-content-center">
@@ -104,7 +184,7 @@
         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 ">
           <h5>Become An Instructor</h5>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In illum voluptates incidunt voluptatem architecto soluta dolore ducimus. </p>
-          <a href="{{url('/instructor')}}"><button class=" btn btn-outline-secondary btn-lg">Welcome!</button></a>
+          <button class=" btn btn-outline-secondary btn-lg">Welcome!</button>
         </div>
          
       </div class="row">
@@ -144,17 +224,17 @@
     </div>
   </section>
   <!-- ./Footer -->
-          
+         	
 
 
 
        <script
-        src="{{asset('js/jquery.min.js')}}"></script>
+			  src="js/jquery.min.js"></script>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+			  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     
-        <script src="{{asset('js/bootstrap.min.js')}}"></script>
-        <script  src="{{asset('js/main,js')}}">
+			  <script src="js/bootstrap.min.js"></script>
+        <script  src="js/main,js">
 
         </script>
 

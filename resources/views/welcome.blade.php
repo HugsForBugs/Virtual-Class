@@ -36,7 +36,7 @@
           <a class="dropdown-item" href="#">Courses by subjects</a>
           
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Computer science</a>
+          <a class="dropdown-item" href="{{ url::to('/les_cours') }}">Computer science</a>
           <a class="dropdown-item" href="#">Arts & Culture</a>
           <a class="dropdown-item" href="#">Biologie </a>
           <a class="dropdown-item" href="#">Sociologie </a>
@@ -79,7 +79,7 @@
      <div class ="login align-bottom mt-auto">
           <div class="box">
         <a class="buttonjc" href="#popup1">
-      <button class=" btn btn-outline-secondary btn-lg">Log in</button></a> </div>
+      <a class=" btn btn-outline-secondary btn-lg login1" href="{{ URL::to('/home ') }}">Log in</a></a> </div>
         <div id="popup1" class="overlayy">
             <div class="popup">
                 <a class="close" href="#">&times;</a>
@@ -99,7 +99,7 @@
       </div>
       </div>
       <div class="col-2">
-      <button class=" btn btn-outline-secondary btn-lg">Register</button>
+      <a class=" btn btn-outline-secondary btn-lg register" href="{{ URL::to('/home ') }}">Register</a>
       </div>
       </div>
     </h1>
@@ -135,7 +135,7 @@
           <h4>Computer science</h4>
 
 
-          <a href="{{ url('/les_cours') }}" ><img src="images/e.jpg" class="img img-fluid "></a>
+          <a href="{{ url::to('/les_cours') }}" ><img src="images/e.jpg" class="img img-fluid "></a>
         </div>
          <div class="col-sm col-lg-3">
           <h4>Businis & Management</h4>
@@ -241,7 +241,7 @@ who'll share their experience through videos, articles, quizzes and discussions.
         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 ">
           <h5>Become An Instructor</h5>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In illum voluptates incidunt voluptatem architecto soluta dolore ducimus. </p>
-          <a href="{{url('/instructor')}}"<button class=" btn btn-outline-secondary btn-lg">Welcome!</button></a>
+          <a href="{{url('/instructor1')}}"<button class=" btn btn-outline-secondary btn-lg">Welcome!</button></a>
         </div>
          
       </div class="row">

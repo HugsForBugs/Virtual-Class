@@ -105,7 +105,7 @@
   <div class="card-body">
     <h5 class="card-title">NodeJs From scratch</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Start Now!</a>
+    <a href="{{ URL::to('/cour_content') }}" class="btn btn-primary">Start Now!</a>
   </div>
 </div>
    </div>
